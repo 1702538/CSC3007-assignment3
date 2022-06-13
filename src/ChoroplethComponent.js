@@ -19,10 +19,7 @@ function ChoroplethMap() {
 
   const getLocalJSONData = () => {
     Promise.all([require("./sgmap.json"), ,]).then((data) => {
-      // console.log(data[0]);
-      // console.log(data[1]);
       setMapData(data);
-      // Map and projection
     });
   };
 
@@ -57,13 +54,7 @@ function ChoroplethMap() {
 
     svg.selectAll("*").remove();
 
-    // const test = mapData[0].features[0].properties;
-    // console.log(test);
-    // test["Population"] = 500;
-    // console.log(test);
-
     const test = mapData[0].features;
-    const test2 = csvData;
 
     console.log("hey", (test[0].properties.Population = "500"));
 
