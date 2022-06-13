@@ -56,8 +56,6 @@ function ChoroplethMap() {
 
     const test = mapData[0].features;
 
-    console.log("hey", (test[0].properties.Population = "500"));
-
     if (csvData.length !== 0) {
       test.forEach((i) => {
         let popData = csvData.filter(function (data) {
