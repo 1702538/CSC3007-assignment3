@@ -25,7 +25,7 @@ function ChoroplethMap() {
 
   const getLocalCSVData = () => {
     Papa.parse(
-      "https://chi-loong.github.io/CSC3007/assignments/population2021.csv",
+      "https://raw.githubusercontent.com/1702538/CSC3007-assignment3/main/src/population2021.csv",
       {
         download: true,
         complete: function (results) {
